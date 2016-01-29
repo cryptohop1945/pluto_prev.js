@@ -1,0 +1,148 @@
+.pluto-prev-img-list img:hover
+{
+    cursor: pointer !important;
+}
+
+.pluto-prev-main section,
+.pluto-prev-main h1,
+.pluto-prev-main li,
+.pluto-prev-main img ,
+.pluto-prev-main div,
+.pluto-prev-main a ,
+.pluto-prev-main input,
+.pluto-prev-main textarea
+{
+    -moz-transition: width .1s ease-in-out, left .1s ease-in-out;
+    -webkit-transition: width .1s ease-in-out, left .1s ease-in-out;
+    -moz-transition: width .1s ease-in-out, left .1s ease-in-out;
+    -o-transition: width .1s ease-in-out, left .1s ease-in-out;
+    transition: width .1s ease-in-out, left .1s ease-in-out;
+}
+.pluto-prev-main
+{
+    z-index: 999999;
+    position: fixed;
+    top:0px;
+    left: 0px;
+    width:100%;
+    height: 100%;
+    background: black;
+    background: rgba(0,0,0,.8);
+}
+
+/* OPTIONS */
+.pluto-prev-tmb-holder
+{
+    width: 100%;
+    position: absolute;
+    top:100%;
+    left: 0px;
+     z-index: 100;
+}
+
+.pluto-prev-tmb
+{
+  
+   
+
+    text-align:center;
+    margin: 0 auto;
+    width:auto;
+    min-height: 5px;
+    background: rgba(255,255,255,.3);
+    border-top: solid 1px #cacaca;
+    border-bottom: solid 1px #cacaca;
+    border-color: rgba(0,0,0,.2);
+}
+.pluto-prev-main .pluto-prev-sub img.sub-current
+{
+    width:30px;
+    height: 30px;
+   
+    margin: 2px;
+    border: solid 1px transparent;
+}
+.pluto-prev-main .pluto-prev-sub img.sub-current:hover{
+    border: solid 1px white;
+    
+}
+
+.pluto-prev-main .pluto-prev-sub img.sub-current-real{
+    border: solid 1px #d1d1d1;
+    
+}
+
+.pluto-prev-option
+{
+    z-index: 100;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    text-align: right;
+    padding: 10px;
+}
+.pluto-prev-button
+{
+    padding: 10px;
+
+}
+.pluto-prev-button:after
+{
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    background: blue;
+    width: 25px;
+    height: 25px;
+}
+.pluto-prev-button.exit:after
+{
+    background: url(exit.png);
+    
+}
+
+/*END OPTIONS */
+.pluto-prev-main .pluto-prev-sub
+{
+    position: relative;
+    width:70%;
+    min-height: 450px;
+    max-height: 450px;
+    margin: 0 auto;
+     margin-top: 20px;
+    text-align: center;
+    background: transparent  url(loading.gif) center no-repeat;
+  
+}
+.pluto-prev-main .pluto-prev-sub img.current
+{
+    position: absolute;
+    margin: auto;
+    top:0;bottom:0;left:0;right:0;
+    min-width: 150px;
+    min-height: 150px;
+    max-height: 100%;
+    max-width: 100%;
+}
+.clear-fix{clear: both !important;}
+
+@media only screen and (max-width: 900px)
+{
+    .pluto-prev-main .pluto-prev-sub
+    {
+        width: 90%;
+    }
+    .pluto-prev-tmb
+    {
+     
+    }
+    .pluto-prev-main .pluto-prev-sub
+    {
+                min-height: 350px;
+    }
+    .pluto-prev-main .pluto-prev-sub img.current
+    {
+
+
+    }
+}
